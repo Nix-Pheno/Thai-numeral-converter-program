@@ -4,6 +4,7 @@ digit = ( 'สิบ(sib)' , 'ร้อย(roi)' , 'พัน(pan)', 'หมื�
 SPE = ('ยี่(yii)', 'เอ็ด(ed)')
 
 def convert_2_digit(n):
+    
     tens = n // 10
     ones = n % 10
     result = ''
@@ -50,6 +51,7 @@ def convert_number_to_thai (number):
         n = x % 10
 
         part = ''
+
         if Hk > 0:
             part += tp_digit_word[Hk] + 'แสน(san)'
     
